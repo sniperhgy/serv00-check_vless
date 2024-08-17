@@ -2,7 +2,7 @@ name: SSH Login
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # 每天中午12点执行一次
+    - cron: '0 */2 * * *'  # 每2小时运行一次
   workflow_dispatch:
 
 jobs:
